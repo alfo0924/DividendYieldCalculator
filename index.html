@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>存股殖利率計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator-container">
+    <h1>存股殖利率試算</h1>
+
+    <div class="input-group">
+        <label for="stockPrice">目前股價 (元):</label>
+        <input type="number" id="stockPrice" placeholder="例如：100">
+    </div>
+
+    <div class="input-group">
+        <label for="cashDividend">每股現金股利 (元):</label>
+        <input type="number" id="cashDividend" placeholder="例如：5">
+    </div>
+
+    <div class="input-group">
+        <label for="stockDividend">每股股票股利 (元):</label>
+        <input type="number" id="stockDividend" placeholder="例如：0.5 (即配0.05股)">
+    </div>
+
+    <div class="input-group">
+        <label for="sharesOwned">持有股數 (股):</label>
+        <input type="number" id="sharesOwned" placeholder="例如：1000">
+    </div>
+
+    <button id="calculateBtn">計算</button>
+
+    <div class="results-container" id="resultsContainer">
+        <h2>計算結果:</h2>
+        <p>現金殖利率: <span id="cashYieldResult">-</span>%</p>
+        <p>股票殖利率 (以現價計): <span id="stockYieldResult">-</span>%</p>
+        <p>總殖利率 (現金+股票): <span id="totalYieldResult">-</span>%</p>
+        <p>除權息參考價: <span id="exDividendPriceResult">-</span> 元</p>
+        <p>預估收到現金股利: <span id="totalCashDividendResult">-</span> 元</p>
+        <p>預估收到股票股利: <span id="totalStockSharesResult">-</span> 股</p>
+    </div>
+    <div class="notes">
+        <p><strong>註：</strong></p>
+        <ul>
+            <li>股票股利1元指配0.1股[1]。</li>
+            <li>股票殖利率是以配股後，用目前股價估算其價值[1][3]。</li>
+            <li>除權息參考價公式參考來源[3]。</li>
+            <li>殖利率計算公式參考來源[1][2]。</li>
+        </ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
