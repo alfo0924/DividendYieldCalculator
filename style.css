@@ -45,7 +45,7 @@ h2 {
     margin-bottom: 6px;
     color: #555;
     font-weight: bold;
-    font-size: 0.95em;
+    font-size: 1.5em;
 }
 
 .input-group input[type="number"] {
@@ -90,7 +90,7 @@ button#calculateBtn:hover {
 
 .results-container p {
     margin: 10px 0;
-    font-size: 1em;
+    font-size: 1.5em;
     color: #333;
 }
 
@@ -101,7 +101,7 @@ button#calculateBtn:hover {
 
 .notes {
     margin-top: 20px;
-    font-size: 0.85em;
+    font-size: 1.5em;
     color: #666;
     background-color: #eef2f5;
     padding: 10px;
